@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Spon
+Comment=Spon P2P Cryptocurrency
+Exec=spon-qt %u
+Terminal=false
+Type=Application
+Icon=spon128
+MimeType=x-scheme-handler/spon;
+Categories=Office;Finance;
+Name[en_US]=spon-qt.desktop

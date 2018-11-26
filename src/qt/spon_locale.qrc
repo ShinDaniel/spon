@@ -1,0 +1,17 @@
+<!DOCTYPE RCC><RCC version="1.0">
+    <qresource prefix="/translations">
+        <file alias="ca">locale/spon_ca.qm</file>
+        <file alias="da">locale/spon_da.qm</file>
+        <file alias="de">locale/spon_de.qm</file>
+        <file alias="en">locale/spon_en.qm</file>
+        <file alias="en_US">locale/spon_en_US.qm</file>
+        <file alias="es">locale/spon_es.qm</file>
+        <file alias="fr_FR">locale/spon_fr_FR.qm</file>
+        <file alias="it">locale/spon_it.qm</file>
+        <file alias="ja">locale/spon_ja.qm</file>
+        <file alias="pt">locale/spon_pt.qm</file>
+        <file alias="ro_RO">locale/spon_ro_RO.qm</file>
+        <file alias="ru">locale/spon_ru.qm</file>
+        <file alias="zh_TW">locale/spon_zh_TW.qm</file>
+    </qresource>
+</RCC>

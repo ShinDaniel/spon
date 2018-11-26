@@ -1,0 +1,26 @@
+# /etc/conf.d/spond: config file for /etc/init.d/spond
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/spon/spon.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/spond"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/spond.pid"
+
+# Where to write spond data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/spond"
+
+# User and group to own spond process
+#BITCOIND_USER="spon"
+#BITCOIND_GROUP="spon"
+
+# Path to spond executable
+#BITCOIND_BIN="/usr/bin/spond"
+
+# Nice value to run spond under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""

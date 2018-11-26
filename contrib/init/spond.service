@@ -1,0 +1,26 @@
+[Unit]
+Description=SPON's distributed currency daemon
+After=network.target
+
+[Service]
+User=spon
+Group=spon
+
+Type=forking
+PIDFile=/var/lib/spond/spond.pid
+
+ExecStart=/usr/bin/spond -daemon -pid=/var/lib/spond/spond.pid \
+          -conf=/etc/spon/spon.conf -datadir=/var/lib/spond
+
+ExecStop=-/usr/bin/spon-cli -conf=/etc/spon/spon.conf \
+         -datadir=/var/lib/spond stop
+
+Restart=always
+PrivateTmp=true
+TimeoutStopSec=60s
+TimeoutStartSec=2s
+StartLimitInterval=120s
+StartLimitBurst=5
+
+[Install]
+WantedBy=multi-user.target
